@@ -10,27 +10,19 @@ const EmployeeSchema = mongoose.Schema(
       validate: mongoose.Schema.Types.String.checkRequired(v => v != null)
 
     },
-    // email: {
-    //   type: String,
-    //   required: true,
-    // },
-    // password: {
-    //   type: String,
-    //   required: true,
-    // },
-    // Dob: {
-    //   type: Date,
-    //   required: true,
-    // },
-    // Gender: {
-    //   type: String,
-    //   enum: ["male", "female"],
-    //   required: true,
-    // },
-    // Salary: {
-    //   type: String,
-    //   required: true,
-    // },
+    dob: {
+      type: Date,
+      required: true,
+    },
+    gender: {
+      type: String,
+      enum: ["Male", "Female"],
+      required: true,
+    },
+    salary: {
+      type: String,
+      required: true,
+    },
   },
   // {
   //   timestamps: true,
