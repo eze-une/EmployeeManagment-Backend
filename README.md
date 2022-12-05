@@ -3,5 +3,5 @@
 make sure to add  
 PORT=5000
 
-and create a mongodb db link
-MONGO_URL=
+Add this to .env
+MONGO_URL=MONGO_URL=mongodb+srv://eze:hannaiscool@cluster0.kwza1hi.mongodb.net/?retryWrites=true&w=majority
